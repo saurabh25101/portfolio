@@ -1,0 +1,460 @@
+ /* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+    color: #333; /* Text color for better visibility */
+}
+
+h2, h3, h4 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+    color: #ff6347;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('pizza-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6); /* Add overlay for text visibility */
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Make text more visible */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Make text more visible */
+}
+
+.hero .btn {
+    padding: 15px 25px;
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff4500;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 15px 20px;
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 99, 71, 0.8);
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    padding: 30px;
+    background-color: #ff6347;
+    color: rgb(63, 8, 8);
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(5, 81, 31, 0.8);
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ff6347;
+    color: white;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hobbies Section */
+.hobbies {
+    padding: 50px ;
+    background-color: #f8b400;
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    margin-bottom: 40px;
+}
+
+.hobbies h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hobby-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hobby-list li {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 50px 0;
+    background-color: #4caf50;
+    text-align: center;
+    animation: glow 3.5s ease-in-out infinite alternate;
+    
+}
+
+.certifications h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.certifications ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: rgb(30, 5, 5);
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+/* Scroll Animation */
+section {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode .hero {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .nav-links a {
+    color: #fff;
+}
+
+body.dark-mode .project {
+    background-color: #333;
+}
+
+body.dark-mode .footer {
+    background-color: #121212;
+}
+
+/* Keyframe for light animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgb(64, 102, 100);
+    }
+}
+/* 
+ */
+ /* Landing Section */
+.landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ff6347;
+    color: white;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.landing h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.landing p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(333, 68, 98, 0.5);
+}
+
+.landing .btn {
+    padding: 15px 25px;
+    background-color: #fff;
+    color: #ff6347;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    box-shadow: 0 2px 10px rgb(98, 14, 234);
+}
+
+.landing .btn:hover {
+    background-color: #1c1a1a;
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* / */
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #0e020e;
+    
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: -10px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    font-size: small;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+    margin-left:-20%;
+    margin-top: 0px
+}
+
+.about-image {
+    flex: 1;
+    max-width: 300px;
+    text-align: right;
+    margin-right: -40;
+}
+
+.about-image img {
+    width: 80%; /* Adjust the width as per your requirement */
+    max-width: 400px; /* Prevent the image from getting too large on wider screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure proper alignment */
+    border-radius: 15px; /* Add rounded corners for aesthetics */
+    box-shadow: 0 2px 20px rgba(10, 333, 363, 0.5); /* Optional shadow for a professional look */
+    margin-right: -50%;
+}
+
